@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="816cdfb0-a151-49b8-a549-fd31c780400d" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1cIhfhE19GVrKchjgJsn3qVlf7N" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="816cdfb0-a151-49b8-a549-fd31c780400d" name="Default Changelist" comment="" />
+      <created>1590222119777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590222119777</updated>
+      <workItem from="1590222122759" duration="943000" />
+      <workItem from="1590223415268" duration="518000" />
+      <workItem from="1590225581073" duration="1219000" />
+      <workItem from="1590227030586" duration="4370000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590225453011">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1590225453011" />
+    <state x="298" y="157" width="683" height="486" key="find.popup" timestamp="1590228482412">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="298" y="157" width="683" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590228482412" />
+    <state x="305" y="124" key="search.everywhere.popup" timestamp="1590225447768">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1590225447768" />
+  </component>
+</project>
