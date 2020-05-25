@@ -10,5 +10,9 @@ let make = (~countries: list(country)) => {
     |> Js.String.includes(inputValue |> Js.String.toLowerCase);
   };
 
-  <CountrySelect countries filterOption />;
+  <CountrySelect
+    countries
+    filterOption
+    components={"Option": CustomOption.make}
+  />;
 };

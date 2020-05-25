@@ -23,11 +23,11 @@ function App(Props) {
                 }));
           
         }), ([]));
-  return React.createElement(React.Fragment, undefined, React.createElement("div", undefined, typeof countriesState === "number" ? (
-                    countriesState !== 0 ? "Error" : "Loading"
-                  ) : React.createElement(SmartCountrySelect$ReasonReactExamples.make, {
-                        countries: countriesState[0]
-                      })));
+  return React.createElement("div", undefined, typeof countriesState === "number" ? (
+                countriesState !== 0 ? "Error" : "Loading"
+              ) : React.createElement(SmartCountrySelect$ReasonReactExamples.make, {
+                    countries: countriesState[0]
+                  }));
 }
 
 var make = App;

@@ -1,10 +1,10 @@
 [@react.component]
-let make = (~countries, ~filterOption=?) => {
+let make = (~countries, ~filterOption=?, ~components=?) => {
   <>
     {switch (filterOption) {
-     | None => <Bindings.Select options=countries />
+     | None => <Bindings.Select components options=countries />
      | Some(filterOption) =>
-       <Bindings.Select filterOption options=countries />
+       <Bindings.Select filterOption components options=countries />
      }}
   </>;
 };

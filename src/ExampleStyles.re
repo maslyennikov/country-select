@@ -6,10 +6,13 @@ let reasonReactBlue = "#48a9dc";
 // constructing a string
 let style = {j|
   body {
+    height: 100vh;
+    width: 100vw;
     background-color: rgb(224, 226, 229);
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   button {
     background-color: white;
@@ -24,9 +27,10 @@ let style = {j|
     color: white;
   }
   .container {
+    height: 50%;
+    width: 50%;
     margin: 12px 0px;
     box-shadow: 0px 4px 16px rgb(200, 200, 200);
-    width: 720px;
     border-radius: 12px;
     font-family: sans-serif;
   }
@@ -40,5 +44,6 @@ let style = {j|
     background-color: white;
     padding: 16px;
     border-radius: 0px 0px 12px 12px;
+    height: 100%;
   }
 |j};

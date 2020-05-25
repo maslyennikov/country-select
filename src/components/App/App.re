@@ -3,11 +3,6 @@ open Types;
 
 [@bs.val] external fetch: string => Js.Promise.t('a) = "fetch";
 
-type state =
-  | LoadingCountries
-  | ErrorFetchingCountries
-  | LoadedCountries(list(country));
-
 [@react.component]
 let make = () => {
   let (countriesState, setCountriesState) = useState(() => LoadingCountries);
@@ -27,13 +22,11 @@ let make = () => {
     None;
   });
 
-  <>
-    <div>
-      {switch (countriesState) {
-       | LoadingCountries => string("Loading")
-       | ErrorFetchingCountries => string("Error")
-       | LoadedCountries(countries) => <SmartCountrySelect countries />
-       }}
-    </div>
-  </>;
+  <div>
+    {switch (countriesState) {
+     | LoadingCountries => string("Loading")
+     | ErrorFetchingCountries => string("Error")
+     | LoadedCountries(countries) => <SmartCountrySelect countries />
+     }}
+  </div>;
 };

@@ -2,31 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="816cdfb0-a151-49b8-a549-fd31c780400d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Bindings.re" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Types.re" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.re" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CustomOption/CustomOption.re" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlinkingGreeting/BlinkingGreeting.bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BlinkingGreeting/BlinkingGreeting.re" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountrySelect/CountrySelect.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountrySelect/CountrySelect.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.re" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FetchedDogPictures/FetchedDogPictures.bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FetchedDogPictures/FetchedDogPictures.re" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Index.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Index.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReactJSCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonReactCard.bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonReactCard.re" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.re" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.bs.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.re" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bindings.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bindings.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bindings.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bindings.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleStyles.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleStyles.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Types.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.re" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +70,8 @@
       <workItem from="1590236131800" duration="7341000" />
       <workItem from="1590245362724" duration="1265000" />
       <workItem from="1590304789798" duration="9482000" />
-      <workItem from="1590391857170" duration="3532000" />
+      <workItem from="1590391857170" duration="7437000" />
+      <workItem from="1590401784178" duration="3308000" />
     </task>
     <servers />
   </component>

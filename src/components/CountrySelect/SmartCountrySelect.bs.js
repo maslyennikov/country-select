@@ -1,6 +1,7 @@
 'use strict';
 
 var React = require("react");
+var CustomOption$ReasonReactExamples = require("../CustomOption/CustomOption.bs.js");
 var CountrySelect$ReasonReactExamples = require("./CountrySelect.bs.js");
 
 function SmartCountrySelect(Props) {
@@ -10,7 +11,10 @@ function SmartCountrySelect(Props) {
   };
   return React.createElement(CountrySelect$ReasonReactExamples.make, {
               countries: countries,
-              filterOption: filterOption
+              filterOption: filterOption,
+              components: {
+                Option: CustomOption$ReasonReactExamples.make
+              }
             });
 }
 
