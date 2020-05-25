@@ -2,9 +2,9 @@
 
 var Curry = require("bs-platform/lib/js/curry.js");
 var React = require("react");
-var Belt_Array = require("bs-platform/lib/js/belt_Array.js");
+var SmartCountrySelect$ReasonReactExamples = require("../CountrySelect/SmartCountrySelect.bs.js");
 
-function CountrySelect(Props) {
+function App(Props) {
   var match = React.useState((function () {
           return /* LoadingCountries */0;
         }));
@@ -25,15 +25,12 @@ function CountrySelect(Props) {
         }), ([]));
   return React.createElement(React.Fragment, undefined, React.createElement("div", undefined, typeof countriesState === "number" ? (
                     countriesState !== 0 ? "Error" : "Loading"
-                  ) : Belt_Array.mapWithIndex(countriesState[0], (function (i, country) {
-                          console.log(country.label);
-                          return React.createElement("div", {
-                                      key: String(i)
-                                    }, country.label);
-                        }))));
+                  ) : React.createElement(SmartCountrySelect$ReasonReactExamples.make, {
+                        countries: countriesState[0]
+                      })));
 }
 
-var make = CountrySelect;
+var make = App;
 
 exports.make = make;
 /* react Not a pure module */

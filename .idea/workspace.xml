@@ -1,7 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="816cdfb0-a151-49b8-a549-fd31c780400d" name="Default Changelist" comment="" />
+    <list default="true" id="816cdfb0-a151-49b8-a549-fd31c780400d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Bindings.re" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Types.re" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.re" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlinkingGreeting/BlinkingGreeting.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BlinkingGreeting/BlinkingGreeting.re" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountrySelect/CountrySelect.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CountrySelect/CountrySelect.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.re" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FetchedDogPictures/FetchedDogPictures.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FetchedDogPictures/FetchedDogPictures.re" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Index.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Index.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReactJSCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonReactCard.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonReactCard.re" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReasonUsingJSUsingReason/ReasonUsingJSUsingReason.re" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReducerFromReactJSDocs/ReducerFromReactJSDocs.re" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,7 +38,14 @@
       <executable />
     </execution>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="country-select" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1cIhfhE19GVrKchjgJsn3qVlf7N" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -27,6 +60,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
+    </key>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -40,7 +78,11 @@
       <workItem from="1590222122759" duration="943000" />
       <workItem from="1590223415268" duration="518000" />
       <workItem from="1590225581073" duration="1219000" />
-      <workItem from="1590227030586" duration="4370000" />
+      <workItem from="1590227030586" duration="6386000" />
+      <workItem from="1590236131800" duration="7341000" />
+      <workItem from="1590245362724" duration="1265000" />
+      <workItem from="1590304789798" duration="9482000" />
+      <workItem from="1590391857170" duration="3532000" />
     </task>
     <servers />
   </component>
@@ -48,14 +90,22 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590319137301">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="104" y="62" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.800@0.0.1280.800" timestamp="1590319137301" />
     <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1590225453011">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="328" y="143" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.800@0.0.1280.800" timestamp="1590225453011" />
-    <state x="298" y="157" width="683" height="486" key="find.popup" timestamp="1590228482412">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1590245796890">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="298" y="157" width="683" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590228482412" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590245796890" />
+    <state x="298" y="157" width="683" height="486" key="find.popup" timestamp="1590311618026">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="298" y="157" width="683" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590311618026" />
     <state x="305" y="124" key="search.everywhere.popup" timestamp="1590225447768">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
