@@ -10,10 +10,18 @@ function CountrySelect(Props) {
   return React.createElement(React.Fragment, undefined, filterOption !== undefined ? React.createElement(ReactSelect.default, {
                     options: countries,
                     filterOption: filterOption,
-                    components: components
+                    components: components,
+                    onChange: (function (option) {
+                        console.log(option);
+                        
+                      })
                   }) : React.createElement(ReactSelect.default, {
                     options: countries,
-                    components: components
+                    components: components,
+                    onChange: (function (option) {
+                        console.log(option);
+                        
+                      })
                   }));
 }
 

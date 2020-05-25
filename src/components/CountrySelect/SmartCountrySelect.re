@@ -2,6 +2,7 @@ open Types;
 
 [@react.component]
 let make = (~countries: list(country)) => {
+  //  This is the custom filter
   let filterOption = (country, inputValue: string) => {
     let {label} = country;
 

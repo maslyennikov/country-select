@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="816cdfb0-a151-49b8-a549-fd31c780400d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/CustomOption/CustomOption.re" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bindings.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bindings.bs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Bindings.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bindings.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleStyles.bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/ExampleStyles.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Types.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ExampleStyles.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Styles.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Index.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/Index.re" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.bs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/CountrySelect.re" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.bs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CountrySelect/SmartCountrySelect.re" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomOption/CustomOption.bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomOption/CustomOption.bs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CustomOption/CustomOption.re" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CustomOption/CustomOption.re" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +68,7 @@
       <workItem from="1590245362724" duration="1265000" />
       <workItem from="1590304789798" duration="9482000" />
       <workItem from="1590391857170" duration="7437000" />
-      <workItem from="1590401784178" duration="3308000" />
+      <workItem from="1590401784178" duration="9910000" />
     </task>
     <servers />
   </component>
@@ -91,10 +88,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1590245796890" />
-    <state x="298" y="157" width="683" height="486" key="find.popup" timestamp="1590311618026">
+    <state x="298" y="157" width="683" height="486" key="find.popup" timestamp="1590418688148">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="298" y="157" width="683" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590311618026" />
+    <state x="298" y="157" width="683" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1590418688148" />
     <state x="305" y="124" key="search.everywhere.popup" timestamp="1590225447768">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
