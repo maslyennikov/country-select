@@ -9,7 +9,7 @@ let countryFlagContainerStyles =
   ReactDOMRe.Style.make(~marginRight="10px", ());
 
 [@react.component]
-// Here I tried to use spread operator which didn't work.
+// Here I tried to use spread operator(for props) which didn't work.
 let make =
     (
       ~label,

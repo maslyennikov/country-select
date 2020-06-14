@@ -6,4 +6,4 @@ type country = {
 type state =
   | LoadingCountries
   | ErrorFetchingCountries
-  | LoadedCountries(list(country));
+  | LoadedCountries(array(country));

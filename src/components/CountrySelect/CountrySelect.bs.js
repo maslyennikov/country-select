@@ -1,25 +1,55 @@
 'use strict';
 
+var $$Array = require("bs-platform/lib/js/array.js");
 var React = require("react");
 var ReactSelect = require("react-select");
+var ReactWorldFlags = require("react-world-flags");
+var CountryList$ReasonReactExamples = require("../CountryList/CountryList.bs.js");
+
+var containerStyles = {
+  display: "flex",
+  padding: "5px",
+  alignItems: "center"
+};
+
+var countryFlagContainerStyles = {
+  marginRight: "10px"
+};
 
 function CountrySelect(Props) {
   var countries = Props.countries;
   var filterOption = Props.filterOption;
-  var components = Props.components;
+  var decoratedCountries = $$Array.map((function (c) {
+          return {
+                  label: React.createElement("div", {
+                        style: containerStyles
+                      }, React.createElement("div", {
+                            style: countryFlagContainerStyles
+                          }, React.createElement(ReactWorldFlags.default, {
+                                code: c.value,
+                                height: "12",
+                                width: "15"
+                              })), React.createElement("div", undefined, c.label)),
+                  value: c.label
+                };
+        }), countries);
   return React.createElement(React.Fragment, undefined, filterOption !== undefined ? React.createElement(ReactSelect.default, {
-                    options: countries,
+                    options: decoratedCountries,
                     filterOption: filterOption,
-                    components: components,
+                    components: {
+                      MenuList: CountryList$ReasonReactExamples.make
+                    },
                     onChange: (function (option) {
                         console.log(option);
                         
                       })
                   }) : React.createElement(ReactSelect.default, {
-                    options: countries,
-                    components: components,
-                    onChange: (function (option) {
-                        console.log(option);
+                    options: decoratedCountries,
+                    components: {
+                      MenuList: CountryList$ReasonReactExamples.make
+                    },
+                    onChange: (function (country) {
+                        console.log(country);
                         
                       })
                   }));
@@ -27,5 +57,7 @@ function CountrySelect(Props) {
 
 var make = CountrySelect;
 
+exports.containerStyles = containerStyles;
+exports.countryFlagContainerStyles = countryFlagContainerStyles;
 exports.make = make;
 /* react Not a pure module */

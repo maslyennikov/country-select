@@ -2,7 +2,7 @@ module Select = {
   [@bs.module "react-select"] [@react.component]
   external make:
     (
-      ~options: list('a),
+      ~options: array('a),
       ~onInputChange: string => string=?,
       ~filterOption: ('b, string) => bool=?,
       ~components: 'c=?,
@@ -44,4 +44,19 @@ module CountryFlag = {
   external make:
     (~code: string, ~height: string=?, ~width: string=?) => React.element =
     "default";
+};
+
+module FixedSizeList = {
+  [@bs.module "react-window"] [@react.component]
+  external make:
+    (
+      ~itemCount: int,
+      ~height: int,
+      ~width: int=?,
+      ~itemSize: int,
+      ~initialScrollOffset: int=?,
+      ~children: 'a=?
+    ) =>
+    React.element =
+    "FixedSizeList";
 };
