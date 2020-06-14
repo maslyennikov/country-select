@@ -14,14 +14,18 @@ let countryFlagContainerStyles =
 let make = (~countries, ~filterOption=?) => {
   let decoratedCountries =
     countries
-    |> Array.map(c =>
+    |> Array.map(countryEntry =>
          {
            "label":
              <div style=containerStyles>
                <div style=countryFlagContainerStyles>
-                 <Bindings.CountryFlag code={c.value} width="15" height="12" />
+                 <Bindings.CountryFlag
+                   code={countryEntry.value}
+                   width="15"
+                   height="12"
+                 />
                </div>
-               <div> {React.string(c.label)} </div>
+               <div> {React.string(countryEntry.label)} </div>
              </div>,
            "value": c.label,
          }

@@ -5,7 +5,6 @@ var Caml_array = require("bs-platform/lib/js/caml_array.js");
 var ReactWindow = require("react-window");
 
 function CountryList(Props) {
-  Props.options;
   var children = Props.children;
   var maxHeight = Props.maxHeight;
   return React.createElement(ReactWindow.FixedSizeList, {

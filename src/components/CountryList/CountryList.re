@@ -1,11 +1,11 @@
 open Types;
-type propsRecord = {
+type itemProps = {
   index: int,
   style: ReactDOMRe.style,
 };
 
 [@react.component]
-let make = (~options: array(country), ~children, ~maxHeight) => {
+let make = (~children, ~maxHeight) => {
   let height = 35;
 
   <Bindings.FixedSizeList
