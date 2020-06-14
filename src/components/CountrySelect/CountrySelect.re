@@ -27,7 +27,7 @@ let make = (~countries, ~filterOption=?) => {
                </div>
                <div> {React.string(countryEntry.label)} </div>
              </div>,
-           "value": c.label,
+           "value": countryEntry.label,
          }
        );
 

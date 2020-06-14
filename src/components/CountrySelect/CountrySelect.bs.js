@@ -19,18 +19,18 @@ var countryFlagContainerStyles = {
 function CountrySelect(Props) {
   var countries = Props.countries;
   var filterOption = Props.filterOption;
-  var decoratedCountries = $$Array.map((function (c) {
+  var decoratedCountries = $$Array.map((function (countryEntry) {
           return {
                   label: React.createElement("div", {
                         style: containerStyles
                       }, React.createElement("div", {
                             style: countryFlagContainerStyles
                           }, React.createElement(ReactWorldFlags.default, {
-                                code: c.value,
+                                code: countryEntry.value,
                                 height: "12",
                                 width: "15"
-                              })), React.createElement("div", undefined, c.label)),
-                  value: c.label
+                              })), React.createElement("div", undefined, countryEntry.label)),
+                  value: countryEntry.label
                 };
         }), countries);
   return React.createElement(React.Fragment, undefined, filterOption !== undefined ? React.createElement(ReactSelect.default, {
