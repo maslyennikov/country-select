@@ -39,6 +39,33 @@ module Option = {
     "Option";
 };
 
+module Menu = {
+  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
+  external make:
+    (
+      ~children: React.element=?,
+      ~getStyles: (string, 'a) => 'b=?,
+      ~cx: unit => unit=?,
+      ~label: string=?,
+      ~value: 'a=?,
+      ~theme: 'a=?,
+      ~setValue: 'a=?,
+      ~data: 'a=?,
+      ~innerProps: 'a=?,
+      ~innerRef: 'a=?,
+      ~isSelected: bool=?,
+      ~isFocused: bool=?,
+      ~isDisabled: bool=?,
+      ~selectProps: 'a=?,
+      ~selectOption: 'a=?,
+      ~options: array('a)=?,
+      ~isMulti: 'a=?,
+      ~hasValue: bool=?
+    ) =>
+    React.element =
+    "Menu";
+};
+
 module CountryFlag = {
   [@bs.module "react-world-flags"] [@react.component]
   external make:

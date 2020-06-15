@@ -4,6 +4,7 @@ var $$Array = require("bs-platform/lib/js/array.js");
 var React = require("react");
 var ReactSelect = require("react-select");
 var ReactWorldFlags = require("react-world-flags");
+var CustomMenu$ReasonReactExamples = require("../CustomMenu/CustomMenu.bs.js");
 var CountryList$ReasonReactExamples = require("../CountryList/CountryList.bs.js");
 
 var containerStyles = {
@@ -37,7 +38,8 @@ function CountrySelect(Props) {
                     options: decoratedCountries,
                     filterOption: filterOption,
                     components: {
-                      MenuList: CountryList$ReasonReactExamples.make
+                      MenuList: CountryList$ReasonReactExamples.make,
+                      Menu: CustomMenu$ReasonReactExamples.make
                     },
                     onChange: (function (option) {
                         console.log(option);
@@ -46,7 +48,8 @@ function CountrySelect(Props) {
                   }) : React.createElement(ReactSelect.default, {
                     options: decoratedCountries,
                     components: {
-                      MenuList: CountryList$ReasonReactExamples.make
+                      MenuList: CountryList$ReasonReactExamples.make,
+                      Menu: CustomMenu$ReasonReactExamples.make
                     },
                     onChange: (function (country) {
                         console.log(country);

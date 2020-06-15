@@ -35,14 +35,14 @@ let make = (~countries, ~filterOption=?) => {
     {switch (filterOption) {
      | None =>
        <Bindings.Select
-         components={"MenuList": CountryList.make}
+         components={"MenuList": CountryList.make, "Menu": CustomMenu.make}
          options=decoratedCountries
          onChange={country => Js.log(country)}
        />
      | Some(filterOption) =>
        <Bindings.Select
          filterOption
-         components={"MenuList": CountryList.make}
+         components={"MenuList": CountryList.make, "Menu": CustomMenu.make}
          options=decoratedCountries
          onChange={option => Js.log(option)}
        />

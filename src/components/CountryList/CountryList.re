@@ -1,4 +1,3 @@
-open Types;
 type itemProps = {
   index: int,
   style: ReactDOMRe.style,
