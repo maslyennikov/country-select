@@ -1,1 +1,43 @@
-[@react.component];
+[@react.component]
+let make =
+    (
+      ~label,
+      ~value,
+      ~theme,
+      ~setValue,
+      ~data,
+      ~innerProps,
+      ~innerRef,
+      ~isSelected,
+      ~isFocused,
+      ~isDisabled,
+      ~selectProps,
+      ~selectOption,
+      ~options,
+      ~isMulti,
+      ~hasValue,
+      ~getStyles,
+      ~cx,
+    ) => {
+  <>
+    <Bindings.Option
+      getStyles
+      cx
+      label
+      theme
+      setValue
+      data
+      innerProps
+      innerRef
+      isSelected
+      isFocused
+      isDisabled
+      selectProps
+      selectOption
+      options
+      isMulti
+      value
+      hasValue
+    />
+  </>;
+};

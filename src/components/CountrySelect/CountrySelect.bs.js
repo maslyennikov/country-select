@@ -5,7 +5,8 @@ var React = require("react");
 var ReactSelect = require("react-select");
 var ReactWorldFlags = require("react-world-flags");
 var CustomMenu$ReasonReactExamples = require("../CustomMenu/CustomMenu.bs.js");
-var CountryList$ReasonReactExamples = require("../CountryList/CountryList.bs.js");
+var CustomCountryList$ReasonReactExamples = require("../CustomCountryList/CustomCountryList.bs.js");
+var CustomIndicatorSeparator$ReasonReactExamples = require("../CustomIndicatorSeparator/CustomIndicatorSeparator.bs.js");
 
 var containerStyles = {
   display: "flex",
@@ -17,10 +18,35 @@ var countryFlagContainerStyles = {
   marginRight: "10px"
 };
 
+var customStyles = ({
+    menu: (provided, state) => ({
+      ...provided,
+      bottom: "auto",
+      width: "230px",
+      margin: "0",
+      borderRadius: "0"
+    }),
+
+    control: (_, { selectProps: { width }}) => ({
+        background: "#FFFFFF",
+        border: "1px solid rgba(0,0,0,0.20)",
+        borderRadius: "3px",
+
+        fontFamily: "ArialMT",
+        fontSize: "14px",
+        color: "#333333",
+        lineHeight: "18px",
+
+        width: "119px",
+        display: "flex",
+        height: "26px"
+      })
+  });
+
 function CountrySelect(Props) {
   var countries = Props.countries;
   var filterOption = Props.filterOption;
-  var decoratedCountries = $$Array.map((function (countryEntry) {
+  $$Array.map((function (countryEntry) {
           return {
                   label: React.createElement("div", {
                         style: containerStyles
@@ -35,26 +61,32 @@ function CountrySelect(Props) {
                 };
         }), countries);
   return React.createElement(React.Fragment, undefined, filterOption !== undefined ? React.createElement(ReactSelect.default, {
-                    options: decoratedCountries,
+                    options: countries,
                     filterOption: filterOption,
                     components: {
-                      MenuList: CountryList$ReasonReactExamples.make,
-                      Menu: CustomMenu$ReasonReactExamples.make
+                      MenuList: CustomCountryList$ReasonReactExamples.make,
+                      Menu: CustomMenu$ReasonReactExamples.make,
+                      IndicatorSeparator: CustomIndicatorSeparator$ReasonReactExamples.make
                     },
                     onChange: (function (option) {
                         console.log(option);
                         
-                      })
+                      }),
+                    defaultMenuIsOpen: true,
+                    styles: customStyles
                   }) : React.createElement(ReactSelect.default, {
-                    options: decoratedCountries,
+                    options: countries,
                     components: {
-                      MenuList: CountryList$ReasonReactExamples.make,
-                      Menu: CustomMenu$ReasonReactExamples.make
+                      MenuList: CustomCountryList$ReasonReactExamples.make,
+                      Menu: CustomMenu$ReasonReactExamples.make,
+                      IndicatorSeparator: CustomIndicatorSeparator$ReasonReactExamples.make
                     },
                     onChange: (function (country) {
                         console.log(country);
                         
-                      })
+                      }),
+                    defaultMenuIsOpen: true,
+                    styles: customStyles
                   }));
 }
 
@@ -62,5 +94,6 @@ var make = CountrySelect;
 
 exports.containerStyles = containerStyles;
 exports.countryFlagContainerStyles = countryFlagContainerStyles;
+exports.customStyles = customStyles;
 exports.make = make;
-/* react Not a pure module */
+/* customStyles Not a pure module */

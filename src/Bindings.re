@@ -6,7 +6,10 @@ module Select = {
       ~onInputChange: string => string=?,
       ~filterOption: ('b, string) => bool=?,
       ~components: 'c=?,
-      ~onChange: 'a => unit=?
+      ~onChange: 'a => unit=?,
+      ~menuPlacement: string=?,
+      ~defaultMenuIsOpen: bool=?,
+      ~styles: 'a=?
     ) =>
     React.element =
     "default";
@@ -32,7 +35,7 @@ module Option = {
       ~selectProps: 'a=?,
       ~selectOption: 'a=?,
       ~options: array('a)=?,
-      ~isMulti: 'a=?,
+      ~isMulti: bool=?,
       ~hasValue: bool=?
     ) =>
     React.element =
@@ -59,11 +62,31 @@ module Menu = {
       ~selectProps: 'a=?,
       ~selectOption: 'a=?,
       ~options: array('a)=?,
-      ~isMulti: 'a=?,
-      ~hasValue: bool=?
+      ~isMulti: bool=?,
+      ~hasValue: bool=?,
+      ~className: string=?
     ) =>
     React.element =
     "Menu";
+};
+
+module IndicatorSeparator = {
+  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
+  external make:
+    (
+      ~clearValue: unit => unit=?,
+      ~getStyles: (string, 'a) => 'b=?,
+      ~getValue: unit => 'a=?,
+      ~hasValue: bool=?,
+      ~isMulti: bool=?,
+      ~options: 'a=?,
+      ~selectOption: 'a => unit=?,
+      ~selectProps: 'a=?,
+      ~setValue: 'a=?,
+      ~emotion: 'a=?
+    ) =>
+    React.element =
+    "IndicatorSeparator";
 };
 
 module CountryFlag = {
