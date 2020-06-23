@@ -1,11 +1,11 @@
 'use strict';
 
-var $$Array = require("bs-platform/lib/js/array.js");
 var React = require("react");
 var ReactSelect = require("react-select");
-var ReactWorldFlags = require("react-world-flags");
 var CustomMenu$ReasonReactExamples = require("../CustomMenu/CustomMenu.bs.js");
+var CustomOption$ReasonReactExamples = require("../CustomOption/CustomOption.bs.js");
 var CustomCountryList$ReasonReactExamples = require("../CustomCountryList/CustomCountryList.bs.js");
+var CustomDropdownIndicator$ReasonReactExamples = require("../CustomDropdownIndicator/CustomDropdownIndicator.bs.js");
 var CustomIndicatorSeparator$ReasonReactExamples = require("../CustomIndicatorSeparator/CustomIndicatorSeparator.bs.js");
 
 var containerStyles = {
@@ -40,33 +40,30 @@ var customStyles = ({
         width: "119px",
         display: "flex",
         height: "26px"
-      })
+      }),
+
+    option: (provided, state) => ({
+            ...provided,
+            padding: "4px 10px",
+            fontFamily: "ArialMT",
+            fontSize: "14px",
+            color: "#333333",
+            lineHeight: "18px",
+        })
   });
 
 function CountrySelect(Props) {
   var countries = Props.countries;
   var filterOption = Props.filterOption;
-  $$Array.map((function (countryEntry) {
-          return {
-                  label: React.createElement("div", {
-                        style: containerStyles
-                      }, React.createElement("div", {
-                            style: countryFlagContainerStyles
-                          }, React.createElement(ReactWorldFlags.default, {
-                                code: countryEntry.value,
-                                height: "12",
-                                width: "15"
-                              })), React.createElement("div", undefined, countryEntry.label)),
-                  value: countryEntry.label
-                };
-        }), countries);
   return React.createElement(React.Fragment, undefined, filterOption !== undefined ? React.createElement(ReactSelect.default, {
                     options: countries,
                     filterOption: filterOption,
                     components: {
                       MenuList: CustomCountryList$ReasonReactExamples.make,
                       Menu: CustomMenu$ReasonReactExamples.make,
-                      IndicatorSeparator: CustomIndicatorSeparator$ReasonReactExamples.make
+                      IndicatorSeparator: CustomIndicatorSeparator$ReasonReactExamples.make,
+                      DropdownIndicator: CustomDropdownIndicator$ReasonReactExamples.make,
+                      Option: CustomOption$ReasonReactExamples.make
                     },
                     onChange: (function (option) {
                         console.log(option);
@@ -79,7 +76,9 @@ function CountrySelect(Props) {
                     components: {
                       MenuList: CustomCountryList$ReasonReactExamples.make,
                       Menu: CustomMenu$ReasonReactExamples.make,
-                      IndicatorSeparator: CustomIndicatorSeparator$ReasonReactExamples.make
+                      IndicatorSeparator: CustomIndicatorSeparator$ReasonReactExamples.make,
+                      DropdownIndicator: CustomDropdownIndicator$ReasonReactExamples.make,
+                      Option: CustomOption$ReasonReactExamples.make
                     },
                     onChange: (function (country) {
                         console.log(country);

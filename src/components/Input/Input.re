@@ -1,0 +1,33 @@
+[@react.component]
+let make =
+    (
+      ~clearValue,
+      ~getStyles,
+      ~getValue,
+      ~hasValue,
+      ~isMulti,
+      ~options,
+      ~selectOption,
+      ~selectProps,
+      ~setValue,
+      ~emotion,
+      ~theme,
+      ~cx,
+    ) => {
+  <>
+    <Bindings.Input
+      cx
+      clearValue
+      getStyles
+      getValue
+      hasValue
+      isMulti
+      options
+      selectOption
+      selectProps
+      setValue
+      theme
+      emotion
+    />
+  </>;
+};

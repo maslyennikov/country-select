@@ -34,32 +34,22 @@ let customStyles = [%bs.raw
         width: "119px",
         display: "flex",
         height: "26px"
-      })
+      }),
+
+    option: (provided, state) => ({
+            ...provided,
+            padding: "4px 10px",
+            fontFamily: "ArialMT",
+            fontSize: "14px",
+            color: "#333333",
+            lineHeight: "18px",
+        })
   }
   |}
 ];
 
 [@react.component]
 let make = (~countries, ~filterOption=?) => {
-  let decoratedCountries =
-    countries
-    |> Array.map(countryEntry =>
-         {
-           "label":
-             <div style=containerStyles>
-               <div style=countryFlagContainerStyles>
-                 <Bindings.CountryFlag
-                   code={countryEntry.value}
-                   width="15"
-                   height="12"
-                 />
-               </div>
-               <div> {React.string(countryEntry.label)} </div>
-             </div>,
-           "value": countryEntry.label,
-         }
-       );
-
   <>
     {switch (filterOption) {
      | None =>
@@ -68,6 +58,8 @@ let make = (~countries, ~filterOption=?) => {
            "MenuList": CustomCountryList.make,
            "Menu": CustomMenu.make,
            "IndicatorSeparator": CustomIndicatorSeparator.make,
+           "DropdownIndicator": CustomDropdownIndicator.make,
+           "Option": CustomOption.make,
          }
          options=countries
          onChange={country => Js.log(country)}
@@ -81,6 +73,8 @@ let make = (~countries, ~filterOption=?) => {
            "MenuList": CustomCountryList.make,
            "Menu": CustomMenu.make,
            "IndicatorSeparator": CustomIndicatorSeparator.make,
+           "DropdownIndicator": CustomDropdownIndicator.make,
+           "Option": CustomOption.make,
          }
          options=countries
          onChange={option => Js.log(option)}

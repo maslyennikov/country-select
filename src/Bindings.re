@@ -23,34 +23,7 @@ module Option = {
       ~getStyles: (string, 'a) => 'b=?,
       ~cx: unit => unit=?,
       ~label: string=?,
-      ~value: 'a=?,
-      ~theme: 'a=?,
-      ~setValue: 'a=?,
-      ~data: 'a=?,
-      ~innerProps: 'a=?,
-      ~innerRef: 'a=?,
-      ~isSelected: bool=?,
-      ~isFocused: bool=?,
-      ~isDisabled: bool=?,
-      ~selectProps: 'a=?,
-      ~selectOption: 'a=?,
-      ~options: array('a)=?,
-      ~isMulti: bool=?,
-      ~hasValue: bool=?
-    ) =>
-    React.element =
-    "Option";
-};
-
-module Menu = {
-  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
-  external make:
-    (
-      ~children: React.element=?,
-      ~getStyles: (string, 'a) => 'b=?,
-      ~cx: unit => unit=?,
-      ~label: string=?,
-      ~value: 'a=?,
+      ~value: string=?,
       ~theme: 'a=?,
       ~setValue: 'a=?,
       ~data: 'a=?,
@@ -64,7 +37,34 @@ module Menu = {
       ~options: array('a)=?,
       ~isMulti: bool=?,
       ~hasValue: bool=?,
-      ~className: string=?
+      ~children: 'a=?
+    ) =>
+    React.element =
+    "Option";
+};
+
+module Menu = {
+  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
+  external make:
+    (
+      ~children: React.element=?,
+      ~getStyles: (string, 'a) => 'b=?,
+      ~cx: unit => unit=?,
+      ~label: string=?,
+      ~value: string=?,
+      ~theme: 'a=?,
+      ~setValue: 'a=?,
+      ~data: 'a=?,
+      ~innerProps: 'a=?,
+      ~innerRef: 'a=?,
+      ~isSelected: bool=?,
+      ~isFocused: bool=?,
+      ~isDisabled: bool=?,
+      ~selectProps: 'a=?,
+      ~selectOption: 'a=?,
+      ~options: array('a)=?,
+      ~isMulti: bool=?,
+      ~hasValue: bool=?
     ) =>
     React.element =
     "Menu";
@@ -87,6 +87,50 @@ module IndicatorSeparator = {
     ) =>
     React.element =
     "IndicatorSeparator";
+};
+
+module DropdownIndicator = {
+  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
+  external make:
+    (
+      ~clearValue: unit => unit=?,
+      ~getStyles: (string, 'a) => 'b=?,
+      ~getValue: unit => 'a=?,
+      ~hasValue: bool=?,
+      ~isMulti: bool=?,
+      ~options: 'a=?,
+      ~selectOption: 'a => unit=?,
+      ~selectProps: 'a=?,
+      ~setValue: ('a, 'b) => unit=?,
+      ~emotion: 'a=?,
+      ~theme: 'a=?,
+      ~children: 'a=?,
+      ~cx: unit => unit=?
+    ) =>
+    React.element =
+    "DropdownIndicator";
+};
+
+module Input = {
+  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
+  external make:
+    (
+      ~clearValue: unit => unit=?,
+      ~getStyles: (string, 'a) => 'b=?,
+      ~getValue: unit => 'a=?,
+      ~hasValue: bool=?,
+      ~isMulti: bool=?,
+      ~options: array('a)=?,
+      ~selectOption: 'a=?,
+      ~selectProps: 'a=?,
+      ~setValue: 'a=?,
+      ~emotion: 'a=?,
+      ~theme: 'a=?,
+      ~children: 'a=?,
+      ~cx: unit => unit=?
+    ) =>
+    React.element =
+    "Input";
 };
 
 module CountryFlag = {

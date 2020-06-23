@@ -30,7 +30,7 @@ let make =
       ~children,
     ) => {
   <>
-    <div style=searchContainerStyles> {React.string("This is a test")} </div>
+    <div style=searchContainerStyles> {React.string("stuff goes here")} </div>
     <Bindings.Menu
       getStyles
       cx
@@ -48,8 +48,7 @@ let make =
       options
       isMulti
       value
-      hasValue
-      className="optionsMenu">
+      hasValue>
       children
     </Bindings.Menu>
   </>;

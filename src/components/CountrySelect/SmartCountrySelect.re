@@ -4,9 +4,9 @@ open Types;
 let make = (~countries: array(country)) => {
   //  This is the custom filter
   let filterOption = (country, inputValue: string) => {
-    let {value} = country;
+    let {label} = country;
 
-    value
+    label
     |> Js.String.toLowerCase
     |> Js.String.includes(inputValue |> Js.String.toLowerCase);
   };

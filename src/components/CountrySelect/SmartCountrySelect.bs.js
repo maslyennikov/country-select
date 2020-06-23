@@ -6,7 +6,7 @@ var CountrySelect$ReasonReactExamples = require("./CountrySelect.bs.js");
 function SmartCountrySelect(Props) {
   var countries = Props.countries;
   var filterOption = function (country, inputValue) {
-    return country.value.toLowerCase().includes(inputValue.toLowerCase());
+    return country.label.toLowerCase().includes(inputValue.toLowerCase());
   };
   return React.createElement(CountrySelect$ReasonReactExamples.make, {
               countries: countries,

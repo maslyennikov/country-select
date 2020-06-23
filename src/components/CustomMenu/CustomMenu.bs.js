@@ -32,7 +32,7 @@ function CustomMenu(Props) {
   var children = Props.children;
   return React.createElement(React.Fragment, undefined, React.createElement("div", {
                   style: searchContainerStyles
-                }, "This is a test"), React.createElement(ReactSelect.components.Menu, {
+                }, "stuff goes here"), React.createElement(ReactSelect.components.Menu, {
                   children: children,
                   getStyles: getStyles,
                   cx: cx,
@@ -50,8 +50,7 @@ function CustomMenu(Props) {
                   selectOption: selectOption,
                   options: options,
                   isMulti: isMulti,
-                  hasValue: hasValue,
-                  className: "optionsMenu"
+                  hasValue: hasValue
                 }));
 }
 
