@@ -6,11 +6,11 @@ var ReactWindow = require("react-window");
 
 function CustomCountryList(Props) {
   var children = Props.children;
-  var maxHeight = Props.maxHeight;
+  Props.maxHeight;
   return React.createElement(ReactWindow.FixedSizeList, {
               itemCount: children.length,
-              height: maxHeight,
-              itemSize: 35,
+              height: 160,
+              itemSize: 27,
               children: (function (props) {
                   return React.createElement("div", {
                               style: props.style

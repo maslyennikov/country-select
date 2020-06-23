@@ -23,6 +23,8 @@ var customStyles = ({
       ...provided,
       bottom: "auto",
       width: "230px",
+      height: "160px",
+      overlay: "hidden",
       margin: "0",
       borderRadius: "0"
     }),
@@ -49,6 +51,7 @@ var customStyles = ({
             fontSize: "14px",
             color: "#333333",
             lineHeight: "18px",
+            height: "auto"
         })
   });
 

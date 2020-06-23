@@ -17,6 +17,8 @@ let customStyles = [%bs.raw
       ...provided,
       bottom: "auto",
       width: "230px",
+      height: "160px",
+      overlay: "hidden",
       margin: "0",
       borderRadius: "0"
     }),
@@ -43,6 +45,7 @@ let customStyles = [%bs.raw
             fontSize: "14px",
             color: "#333333",
             lineHeight: "18px",
+            height: "auto"
         })
   }
   |}
