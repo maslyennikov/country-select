@@ -1,10 +1,10 @@
 'use strict';
 
-var $$Array = require("bs-platform/lib/js/array.js");
 var React = require("react");
 var ReactSelect = require("react-select");
-var ReactWorldFlags = require("react-world-flags");
-var CountryList$ReasonReactExamples = require("../CountryList/CountryList.bs.js");
+var Search$ReasonReactExamples = require("../Icons/Search.bs.js");
+var CustomOption$ReasonReactExamples = require("../CustomOption/CustomOption.bs.js");
+var CustomCountryList$ReasonReactExamples = require("../CustomCountryList/CustomCountryList.bs.js");
 
 var containerStyles = {
   display: "flex",
@@ -16,48 +16,101 @@ var countryFlagContainerStyles = {
   marginRight: "10px"
 };
 
+var controlContainerStyles = {
+  display: "flex",
+  alignItems: "center"
+};
+
+var searchStyles = {
+  color: "#ADADAD",
+  marginLeft: "10px"
+};
+
+var selectContainerStyles = {
+  position: "absolute",
+  zIndex: "2"
+};
+
+var customStyles = ({
+    menu: (provided, state) => ({
+      ...provided,
+      bottom: "auto",
+      width: "230px",
+      height: "160px",
+      overlay: "hidden",
+      margin: "0",
+      borderRadius: "0",
+      zIndex: "2",
+    }),
+
+    control: (_, { selectProps: { width }}) => ({
+        background: "#FFFFFF",
+        border: "1px solid rgba(0,0,0,0.20)",
+
+        fontFamily: "ArialMT",
+        fontSize: "14px",
+        color: "#333333",
+        lineHeight: "18px",
+        marginLeft: "-1px",
+        marginTop: "2px",
+
+        width: "230px",
+        display: "flex",
+        height: "35px",
+        zIndex: "2"
+      }),
+
+    option: (provided, state) => ({
+            ...provided,
+            padding: "4px 10px",
+            fontFamily: "ArialMT",
+            fontSize: "14px",
+            color: "#333333",
+            lineHeight: "18px",
+            height: "auto"
+        }),
+
+    input: (provided, state) => ({
+        ...provided,
+        marginLeft: "24px"
+    })
+  });
+
 function CountrySelect(Props) {
   var countries = Props.countries;
+  var onChange = Props.onChange;
   var filterOption = Props.filterOption;
-  var decoratedCountries = $$Array.map((function (countryEntry) {
-          return {
-                  label: React.createElement("div", {
-                        style: containerStyles
-                      }, React.createElement("div", {
-                            style: countryFlagContainerStyles
-                          }, React.createElement(ReactWorldFlags.default, {
-                                code: countryEntry.value,
-                                height: "12",
-                                width: "15"
-                              })), React.createElement("div", undefined, countryEntry.label)),
-                  value: countryEntry.label
-                };
-        }), countries);
-  return React.createElement(React.Fragment, undefined, filterOption !== undefined ? React.createElement(ReactSelect.default, {
-                    options: decoratedCountries,
-                    filterOption: filterOption,
-                    components: {
-                      MenuList: CountryList$ReasonReactExamples.make
-                    },
-                    onChange: (function (option) {
-                        console.log(option);
-                        
-                      })
-                  }) : React.createElement(ReactSelect.default, {
-                    options: decoratedCountries,
-                    components: {
-                      MenuList: CountryList$ReasonReactExamples.make
-                    },
-                    onChange: (function (country) {
-                        console.log(country);
-                        
-                      })
-                  }));
+  var components = {
+    MenuList: CustomCountryList$ReasonReactExamples.make,
+    IndicatorSeparator: null,
+    DropdownIndicator: null,
+    Option: CustomOption$ReasonReactExamples.make
+  };
+  return React.createElement("div", {
+              style: selectContainerStyles
+            }, React.createElement(ReactSelect.default, {
+                  options: countries,
+                  filterOption: filterOption,
+                  components: components,
+                  onChange: onChange,
+                  styles: customStyles,
+                  autoFocus: true,
+                  menuIsOpen: true,
+                  placeholder: React.createElement("div", {
+                        style: controlContainerStyles
+                      }, React.createElement(Search$ReasonReactExamples.make, { }), React.createElement("div", {
+                            style: searchStyles
+                          }, "Search"))
+                }));
 }
 
 var make = CountrySelect;
 
 exports.containerStyles = containerStyles;
 exports.countryFlagContainerStyles = countryFlagContainerStyles;
+exports.controlContainerStyles = controlContainerStyles;
+exports.searchStyles = searchStyles;
+exports.selectContainerStyles = selectContainerStyles;
+exports.customStyles = customStyles;
 exports.make = make;
-/* react Not a pure module */
+/* customStyles Not a pure module */

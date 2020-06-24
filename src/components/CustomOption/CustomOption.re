@@ -1,15 +1,13 @@
 let containerStyles =
-  ReactDOMRe.Style.make(
-    ~display="flex",
-    ~alignItems="center",
-    ~padding="5px",
-    (),
-  );
+  ReactDOMRe.Style.make(~display="flex", ~alignItems="center", ());
+
 let countryFlagContainerStyles =
-  ReactDOMRe.Style.make(~marginRight="10px", ());
+  ReactDOMRe.Style.make(~marginRight="8px", ());
+
+let labelStyles =
+  ReactDOMRe.Style.make(~whiteSpace="nowrap", ~overflow="hidden", ());
 
 [@react.component]
-// Here I tried to use spread operator(for props) which didn't work.
 let make =
     (
       ~label,
@@ -31,9 +29,8 @@ let make =
       ~cx,
     ) => {
   <Bindings.Option
-    getStyles
-    cx
     label
+    value
     theme
     setValue
     data
@@ -46,12 +43,14 @@ let make =
     selectOption
     options
     isMulti
-    hasValue>
+    hasValue
+    getStyles
+    cx>
     <div style=containerStyles>
       <div style=countryFlagContainerStyles>
         <Bindings.CountryFlag code=value width="15" height="12" />
       </div>
-      <div> {React.string(label)} </div>
+      <div style=labelStyles> {React.string(label)} </div>
     </div>
   </Bindings.Option>;
 };

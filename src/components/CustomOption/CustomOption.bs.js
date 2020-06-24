@@ -6,12 +6,16 @@ var ReactWorldFlags = require("react-world-flags");
 
 var containerStyles = {
   display: "flex",
-  padding: "5px",
   alignItems: "center"
 };
 
 var countryFlagContainerStyles = {
-  marginRight: "10px"
+  marginRight: "8px"
+};
+
+var labelStyles = {
+  overflow: "hidden",
+  whiteSpace: "nowrap"
 };
 
 function CustomOption(Props) {
@@ -41,10 +45,13 @@ function CustomOption(Props) {
                             code: value,
                             height: "12",
                             width: "15"
-                          })), React.createElement("div", undefined, label)),
+                          })), React.createElement("div", {
+                        style: labelStyles
+                      }, label)),
               getStyles: getStyles,
               cx: cx,
               label: label,
+              value: value,
               theme: theme,
               setValue: setValue,
               data: data,
@@ -65,5 +72,6 @@ var make = CustomOption;
 
 exports.containerStyles = containerStyles;
 exports.countryFlagContainerStyles = countryFlagContainerStyles;
+exports.labelStyles = labelStyles;
 exports.make = make;
 /* react Not a pure module */

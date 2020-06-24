@@ -6,7 +6,16 @@ module Select = {
       ~onInputChange: string => string=?,
       ~filterOption: ('b, string) => bool=?,
       ~components: 'c=?,
-      ~onChange: 'a => unit=?
+      ~onChange: 'a => unit=?,
+      ~menuPlacement: string=?,
+      ~styles: 'a=?,
+      ~isClearable: bool=?,
+      ~autoFocus: bool=?,
+      ~backspaceRemovesValue: bool=?,
+      ~controlShouldRenderValue: bool=?,
+      ~hideSelectedOptions: bool=?,
+      ~menuIsOpen: bool=?,
+      ~placeholder: React.element=?
     ) =>
     React.element =
     "default";
@@ -20,7 +29,7 @@ module Option = {
       ~getStyles: (string, 'a) => 'b=?,
       ~cx: unit => unit=?,
       ~label: string=?,
-      ~value: 'a=?,
+      ~value: string=?,
       ~theme: 'a=?,
       ~setValue: 'a=?,
       ~data: 'a=?,
@@ -32,11 +41,39 @@ module Option = {
       ~selectProps: 'a=?,
       ~selectOption: 'a=?,
       ~options: array('a)=?,
-      ~isMulti: 'a=?,
-      ~hasValue: bool=?
+      ~isMulti: bool=?,
+      ~hasValue: bool=?,
+      ~children: 'a=?
     ) =>
     React.element =
     "Option";
+};
+
+module Menu = {
+  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
+  external make:
+    (
+      ~children: React.element=?,
+      ~getStyles: (string, 'a) => 'b=?,
+      ~cx: unit => unit=?,
+      ~label: string=?,
+      ~value: string=?,
+      ~theme: 'a=?,
+      ~setValue: 'a=?,
+      ~data: 'a=?,
+      ~innerProps: 'a=?,
+      ~innerRef: 'a=?,
+      ~isSelected: bool=?,
+      ~isFocused: bool=?,
+      ~isDisabled: bool=?,
+      ~selectProps: 'a=?,
+      ~selectOption: 'a=?,
+      ~options: array('a)=?,
+      ~isMulti: bool=?,
+      ~hasValue: bool=?
+    ) =>
+    React.element =
+    "Menu";
 };
 
 module CountryFlag = {
