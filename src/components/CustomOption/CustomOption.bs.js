@@ -13,6 +13,11 @@ var countryFlagContainerStyles = {
   marginRight: "8px"
 };
 
+var labelStyles = {
+  overflow: "hidden",
+  whiteSpace: "nowrap"
+};
+
 function CustomOption(Props) {
   var label = Props.label;
   var value = Props.value;
@@ -31,7 +36,6 @@ function CustomOption(Props) {
   var hasValue = Props.hasValue;
   var getStyles = Props.getStyles;
   var cx = Props.cx;
-  Props.children;
   return React.createElement(ReactSelect.components.Option, {
               children: React.createElement("div", {
                     style: containerStyles
@@ -41,7 +45,9 @@ function CustomOption(Props) {
                             code: value,
                             height: "12",
                             width: "15"
-                          })), React.createElement("div", undefined, label)),
+                          })), React.createElement("div", {
+                        style: labelStyles
+                      }, label)),
               getStyles: getStyles,
               cx: cx,
               label: label,
@@ -66,5 +72,6 @@ var make = CustomOption;
 
 exports.containerStyles = containerStyles;
 exports.countryFlagContainerStyles = countryFlagContainerStyles;
+exports.labelStyles = labelStyles;
 exports.make = make;
 /* react Not a pure module */

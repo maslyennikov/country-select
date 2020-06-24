@@ -8,8 +8,14 @@ module Select = {
       ~components: 'c=?,
       ~onChange: 'a => unit=?,
       ~menuPlacement: string=?,
-      ~defaultMenuIsOpen: bool=?,
-      ~styles: 'a=?
+      ~styles: 'a=?,
+      ~isClearable: bool=?,
+      ~autoFocus: bool=?,
+      ~backspaceRemovesValue: bool=?,
+      ~controlShouldRenderValue: bool=?,
+      ~hideSelectedOptions: bool=?,
+      ~menuIsOpen: bool=?,
+      ~placeholder: React.element=?
     ) =>
     React.element =
     "default";
@@ -68,69 +74,6 @@ module Menu = {
     ) =>
     React.element =
     "Menu";
-};
-
-module IndicatorSeparator = {
-  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
-  external make:
-    (
-      ~clearValue: unit => unit=?,
-      ~getStyles: (string, 'a) => 'b=?,
-      ~getValue: unit => 'a=?,
-      ~hasValue: bool=?,
-      ~isMulti: bool=?,
-      ~options: 'a=?,
-      ~selectOption: 'a => unit=?,
-      ~selectProps: 'a=?,
-      ~setValue: 'a=?,
-      ~emotion: 'a=?
-    ) =>
-    React.element =
-    "IndicatorSeparator";
-};
-
-module DropdownIndicator = {
-  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
-  external make:
-    (
-      ~clearValue: unit => unit=?,
-      ~getStyles: (string, 'a) => 'b=?,
-      ~getValue: unit => 'a=?,
-      ~hasValue: bool=?,
-      ~isMulti: bool=?,
-      ~options: 'a=?,
-      ~selectOption: 'a => unit=?,
-      ~selectProps: 'a=?,
-      ~setValue: ('a, 'b) => unit=?,
-      ~emotion: 'a=?,
-      ~theme: 'a=?,
-      ~children: 'a=?,
-      ~cx: unit => unit=?
-    ) =>
-    React.element =
-    "DropdownIndicator";
-};
-
-module Input = {
-  [@bs.module "react-select"] [@bs.scope "components"] [@react.component]
-  external make:
-    (
-      ~clearValue: unit => unit=?,
-      ~getStyles: (string, 'a) => 'b=?,
-      ~getValue: unit => 'a=?,
-      ~hasValue: bool=?,
-      ~isMulti: bool=?,
-      ~options: array('a)=?,
-      ~selectOption: 'a=?,
-      ~selectProps: 'a=?,
-      ~setValue: 'a=?,
-      ~emotion: 'a=?,
-      ~theme: 'a=?,
-      ~children: 'a=?,
-      ~cx: unit => unit=?
-    ) =>
-    React.element =
-    "Input";
 };
 
 module CountryFlag = {

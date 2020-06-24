@@ -3,7 +3,7 @@ type country = {
   value: string,
 };
 
-type state =
+type fetchingState =
   | LoadingCountries
   | ErrorFetchingCountries
   | LoadedCountries(array(country));

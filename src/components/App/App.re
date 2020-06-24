@@ -22,11 +22,11 @@ let make = () => {
     None;
   });
 
-  <div>
+  <>
     {switch (countriesState) {
-     | LoadingCountries => string("Loading")
-     | ErrorFetchingCountries => string("Error")
-     | LoadedCountries(countries) => <SmartCountrySelect countries />
+     | LoadingCountries => React.string("Loading")
+     | ErrorFetchingCountries => React.string("Error")
+     | LoadedCountries(data) => <SmartCountrySelect countries=data />
      }}
-  </div>;
+  </>;
 };
